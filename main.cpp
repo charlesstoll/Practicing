@@ -20,6 +20,20 @@ int main()
     ObjectHolderHolder objHH1(1, 3, 3);
     objHH1.print();
 
+    cout<< "OTHER TESTING --------------------------------------------" << endl;
+    (objHH1.getVector())[1].print();
+    (objHH1.getVector())[1].setID(3000);
+    (objHH1.getVector())[1].print();
+
+    cout << "CHANGING THE BASE OBJECT -------------------------------" << endl;
+    ((objHH1.getVector())[2].getVector())[0].print();
+    ((objHH1.getVector())[2].getVector())[0].setID(490);
+    ((objHH1.getVector())[2].getVector())[0].print();
+
+    cout << "REPRINTING HOLDER HOLDER =================================" << endl;
+    objHH1.print();
+
+
 
 
 

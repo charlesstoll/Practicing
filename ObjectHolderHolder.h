@@ -14,6 +14,7 @@ class ObjectHolderHolder
     virtual ~ObjectHolderHolder();
     ObjectHolderHolder(int ID, int numberOfHolders, int numberOfObjectsPerHolder);
     void print();
+    vector<BaseObjectHolder> &getVector() {return m_ObjectHolderHolder;}
 
   protected:
 

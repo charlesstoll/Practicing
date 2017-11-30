@@ -13,6 +13,8 @@ class BaseObjectHolder
     BaseObjectHolder(int numObjectsm, int objectHolderIDNum);
     virtual ~BaseObjectHolder();
     void print();
+    void setID(int newID) {m_objectHolderIDNumber = newID;}
+    vector<BaseObject> &getVector() {return m_objectHolder;}
 
   protected:
 

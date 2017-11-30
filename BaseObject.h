@@ -14,6 +14,7 @@ class BaseObject
     int GetCounter() { return m_Counter; }
     void SetCounter(int val) { m_Counter = val; }
     void print();
+    void setID(int newID) {m_Counter = newID;}
 
   protected:
 
